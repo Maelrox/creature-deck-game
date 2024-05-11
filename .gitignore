@@ -63,3 +63,4 @@ Builds/
 Library/
 Logs/
 UserSettings/
+.utmp/
