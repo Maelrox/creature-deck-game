@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec7c7da78f7dd4419525d34a80392b4, type: 3}
+  m_Name: Rock Mountains
+  m_EditorClassIdentifier: 
+  dungeonName: Rock Mountains
+  easyCompleted: 0
+  mediumCompleted: 0
+  hardCompleted: 0
+  level: 1
+  index: 1
+  cards:
+  - {fileID: 11400000, guid: b57e248b704cd324dbe29e3021071056, type: 2}
+  - {fileID: 11400000, guid: 762b65363a7e80747afc217b7cb463c7, type: 2}

@@ -1,0 +1,5 @@
+C:/gamedev/creature deck/.utmp/RelWithDebInfo/4l2w5t4b/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/gamedev/creature deck/.utmp/RelWithDebInfo/4l2w5t4b/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/gamedev/creature deck/.utmp/RelWithDebInfo/4l2w5t4b/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/gamedev/creature deck/.utmp/RelWithDebInfo/4l2w5t4b/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/gamedev/creature deck/.utmp/RelWithDebInfo/4l2w5t4b/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

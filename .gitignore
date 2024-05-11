@@ -1,0 +1,65 @@
+# ============
+# Server
+# ============
+/card-server/
+# ============
+# Builds
+# ============
+*.apk
+*.aab
+*.ipa
+*.app
+# =====================================
+# Visual Studio / MonoDevelop / Rider
+# =====================================
+[Ee]xported[Oo]bj/
+.vs/
+.vscode/
+.vsconfig
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+/.idea*/
+/*.svd
+# ============
+# OS generated
+# ============
+.DS_Store
+._*
+Thumbs.db
+# ======================================
+# Ignore all files at the root level .zip
+# ======================================
+/*.zip
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ===============
+# Unity generated
+# ===============
+Temp/
+Obj/
+Build/
+Builds/
+Library/
+Logs/
+UserSettings/
