@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5960163208727074159}
   - component: {fileID: 6833671361746944417}
   - component: {fileID: 5258872617275788373}
-  - component: {fileID: 3560083906392197175}
   m_Layer: 7
   m_Name: Card_Frame2
   m_TagString: Untagged
@@ -109,20 +108,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &3560083906392197175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530949067381748428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &801245009878196988
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +119,6 @@ GameObject:
   - component: {fileID: 6473023459378702990}
   - component: {fileID: 1200307537584936563}
   - component: {fileID: 8157826225181160136}
-  - component: {fileID: 106137372570650610}
   m_Layer: 7
   m_Name: Card_Frame1
   m_TagString: Untagged
@@ -232,20 +216,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &106137372570650610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801245009878196988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &1288742201973372279
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +227,6 @@ GameObject:
   - component: {fileID: 1945987647756958923}
   - component: {fileID: 1477011269712198873}
   - component: {fileID: 841271575172699664}
-  - component: {fileID: 4247467569775439283}
   m_Layer: 7
   m_Name: Card_Frame5
   m_TagString: Untagged
@@ -355,20 +324,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &4247467569775439283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288742201973372279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &1473704274599476030
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +335,6 @@ GameObject:
   - component: {fileID: 736122497188525131}
   - component: {fileID: 6760846990163311115}
   - component: {fileID: 7938492699966356142}
-  - component: {fileID: 4487511989780209153}
   m_Layer: 7
   m_Name: Card_Frame2
   m_TagString: Untagged
@@ -478,20 +432,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &4487511989780209153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473704274599476030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &2598339505571194019
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +476,6 @@ GameObject:
   - component: {fileID: 1170726069247446767}
   - component: {fileID: 1503002761081965935}
   - component: {fileID: 3198948343524994564}
-  - component: {fileID: 2259498601066020656}
   m_Layer: 7
   m_Name: Card_Frame1
   m_TagString: Untagged
@@ -634,20 +573,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &2259498601066020656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3427438565178252219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &5418731781739029466
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +584,6 @@ GameObject:
   - component: {fileID: 1090414918403161764}
   - component: {fileID: 2255082034086771561}
   - component: {fileID: 9065313989472647112}
-  - component: {fileID: 6135476078371897090}
   m_Layer: 7
   m_Name: Card_Frame3
   m_TagString: Untagged
@@ -757,20 +681,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &6135476078371897090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5418731781739029466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &7049162577419493024
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +728,6 @@ GameObject:
   - component: {fileID: 3574642806824541248}
   - component: {fileID: 7111107186836540292}
   - component: {fileID: 836631527091576415}
-  - component: {fileID: 7767934579341318913}
   m_Layer: 7
   m_Name: Card_Frame5
   m_TagString: Untagged
@@ -916,20 +825,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &7767934579341318913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7120603487791489415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &7143132651927056689
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +872,6 @@ GameObject:
   - component: {fileID: 8936679767575668643}
   - component: {fileID: 7675832347970278141}
   - component: {fileID: 9213629651730574013}
-  - component: {fileID: 7634222397137218667}
   m_Layer: 7
   m_Name: Card_Frame4
   m_TagString: Untagged
@@ -1075,20 +969,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &7634222397137218667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7267951777501448988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &8167380838810502595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +980,6 @@ GameObject:
   - component: {fileID: 2658093042521215762}
   - component: {fileID: 5254906313980667504}
   - component: {fileID: 6023069003995367099}
-  - component: {fileID: 6478545041806750415}
   m_Layer: 7
   m_Name: Card_Frame3
   m_TagString: Untagged
@@ -1198,20 +1077,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &6478545041806750415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8167380838810502595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1
 --- !u!1 &9059879394110888710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,7 +1088,6 @@ GameObject:
   - component: {fileID: 4086919592631629004}
   - component: {fileID: 8410999890777128492}
   - component: {fileID: 5949573380421250557}
-  - component: {fileID: 2007991222229033961}
   m_Layer: 7
   m_Name: Card_Frame4
   m_TagString: Untagged
@@ -1321,17 +1185,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &2007991222229033961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9059879394110888710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCard: {fileID: 0}
-  isPlayerPoint: 1

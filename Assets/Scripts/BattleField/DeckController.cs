@@ -9,9 +9,7 @@ using static Utilities;
 public class DeckController : MonoBehaviour
 {
     public static DeckController instance;
-
     public int drawCardCost = 2;
-
     public float waitBetweenDrawingCards = .25f;
 
     void Awake()
@@ -106,7 +104,6 @@ public class DeckController : MonoBehaviour
 
     public void SetPlayableCards(string message)
     {
-        Debug.Log(message);
         CardMessage cardMessage = JsonUtility.FromJson<CardMessage>(message);
         foreach (CardServer cardInServer in cardMessage.data)
         {
@@ -120,14 +117,14 @@ public class DeckController : MonoBehaviour
 
     public void SetDungeonEnemyCards()
     {
-        DungeonScriptableObject dungeon = SessionManager.instance.activeDungeon.dungeonSO;
-        foreach (CardScriptableObject card in dungeon.cards)
+        DungeonScriptableObject dungeonSO = SessionManager.instance.devMode ? Resources.Load<DungeonScriptableObject>("Dungeons/Rock Mountains") : SessionManager.instance.activeDungeon.dungeonSO;
+        if (SessionManager.instance.devMode) { dungeonSO.level = 2; SessionManager.instance.selectedLevel = 2; }
+        foreach (CardScriptableObject card in dungeonSO.cards)
         {
-            CardScriptableManager.instance.ConfigureStatsByXp(card, (dungeon.level * 5));
+            CardScriptableManager.instance.ConfigureStatsByXp(card, (dungeonSO.level * 5));
             enemyDeckToUse.Add(card);
         }
         SetupEnemyDeck();
     }
-
 
 }

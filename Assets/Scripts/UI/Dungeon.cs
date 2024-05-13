@@ -34,6 +34,17 @@ public class Dungeon : MonoBehaviour
         textDungeonName.text = dungeonName;
     }
 
+    private void InitializeForTesting()
+    {
+        dungeonName = "Dark Caverns";
+        easyCompleted = true;
+        mediumCompleted = false;
+        hardCompleted = false;
+        index = 3;
+        level = 10;
+    }
+
+
     void Update()
     {
         

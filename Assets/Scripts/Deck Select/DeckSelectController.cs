@@ -75,7 +75,6 @@ public class DeckSelectController : MonoBehaviour
         for (int i = 0; i < availableCards.Count; i++)
         {
             float offset = (i - selectedIndex) * baseOffset;
-            Debug.Log(offset);
             Vector3 targetPosition = bottomCarouselStartingPoint.position + new Vector3(offset, 0, 0);
             StartCoroutine(SmoothMove(availableCards[i].transform, availableCards[i].transform.position, targetPosition));
         }
@@ -139,7 +138,6 @@ public class DeckSelectController : MonoBehaviour
         if (selectedCards.Count < deckCapacity)
         {
             float offset = (selectedCards.Count) * cardSpacing;
-            Debug.Log("Card clicked: " + selectedCard.cardSO.name);
             Vector3 targetPosition = upperCarouselStartingPoint.position + new Vector3(offset, 0, 0);
             StartCoroutine(SmoothMove(selectedCard.transform, selectedCard.transform.position, targetPosition));
             availableCards.Remove(selectedCard);

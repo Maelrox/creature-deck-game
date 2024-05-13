@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0cdfa575e27b74db73e213bd0b35ab, type: 3}
   m_Name: FireDragon
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: FireDragon
   actionDescription: 
   cardLore: 
-  currentHealth: 0
-  attackPower: 0
-  turnsToAttack: 0
-  characterSprite: {fileID: 0}
+  currentHealth: 31
+  attackPower: 24
+  turnsToAttack: 2
+  characterSprite: {fileID: 21300000, guid: 6fce0dd884ebf124fa57685189255db2, type: 3}
   bgSprite: {fileID: 0}
   magicTypes: 
   poisonPower: 0

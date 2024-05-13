@@ -27,6 +27,7 @@ public class BattleController : MonoBehaviour
 
     void Start()
     {
+        Utilities.DevLogin();
         StartCoroutine(WaitForCards());
     }
 
@@ -41,7 +42,7 @@ public class BattleController : MonoBehaviour
     IEnumerator WaitForCards()
     {
         yield return new WaitForSeconds(0.5f);
-        StartCoroutine(NetworkManager.instance.GetCardsAsync("Morgox"));
+        StartCoroutine(NetworkManager.instance.GetCardsAsync(SessionManager.instance.token));
         yield return new WaitUntil(() => NetworkManager.instance.cardsReceived);
         SetBattle();
     }
@@ -149,8 +150,14 @@ public class BattleController : MonoBehaviour
             foreach (CardPlacePoint point in CardPointsController.instance.enemyCardPoints) {
                 if (point.activeCard != null) point.activeCard.MoveToPoint(discardPoint.position, point.activeCard.transform.rotation);
             }
-            StartCoroutine(NetworkManager.instance.EndBattle("Morgox"));
-            StartCoroutine(NetworkManager.instance.CompleteDungeons(SessionManager.instance.activeDungeon.dungeonName, "Morgox", SessionManager.instance.selectedLevel + 1));
+            StartCoroutine(NetworkManager.instance.EndBattle(SessionManager.instance.token));
+            if (SessionManager.instance.devMode)
+            {
+                StartCoroutine(NetworkManager.instance.CompleteDungeons("Rock Mountains", SessionManager.instance.token, SessionManager.instance.selectedLevel + 1));
+            } else
+            {
+                StartCoroutine(NetworkManager.instance.CompleteDungeons(SessionManager.instance.activeDungeon.dungeonName, SessionManager.instance.token, SessionManager.instance.selectedLevel + 1));
+            }
             float probability = Random.Range(0f, 1f);
             if (probability > 0.1f)
             {

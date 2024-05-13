@@ -11,12 +11,9 @@ using System.Linq;
 using static Utilities;
 public class UIMapController : MonoBehaviour
 {
-
     public static UIMapController instance;
-
     public Image image;
-    public string dungeonName; //Mapname
-
+    public string dungeonName;
     public List<DungeonScriptableObject> dungeons;
     public Dungeon dungeonToSpawn;
     private const string DungeonsPath = "Dungeons/";
@@ -27,19 +24,17 @@ public class UIMapController : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
+        Utilities.DevLogin();
         StartCoroutine(WaitForDungeons());
     }
 
     IEnumerator WaitForDungeons()
     {
         yield return new WaitForSeconds(0.7f);
-        Debug.Log("Fetching dungeons...");
-        StartCoroutine(NetworkManager.instance.GetDungeonsAsync("Morgox")); 
+        StartCoroutine(NetworkManager.instance.GetDungeons(SessionManager.instance.token)); 
         yield return new WaitUntil(() => NetworkManager.instance.dungeonsReceived);
-        Debug.Log("Dungones received...");
     }
 
     public void ConfirmModal(Dungeon dungeon)
@@ -116,8 +111,4 @@ public class UIMapController : MonoBehaviour
         return dungeon;
     }
 
-    public void CompleteDungeon(string playerId, string dungeonName, int level)
-    {   
-
-    }
 }

@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ec7c7da78f7dd4419525d34a80392b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 212d1b78fcab52a41a1588d8d10d791b, type: 3}
   m_Name: Plagued Hills
   m_EditorClassIdentifier: 
   dungeonName: Plagued Hills
   easyCompleted: 0
   mediumCompleted: 0
   hardCompleted: 0
-  level: 1
-  index: 3
-  cards: []
+  level: 0
+  index: 2
+  cards:
+  - {fileID: 11400000, guid: ce442c204757a814b8476743dd42bdf0, type: 2}

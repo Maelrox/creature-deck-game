@@ -50,6 +50,7 @@ public class Thumbnail : MonoBehaviour
     public void SetupThumbnail(Card card)
     {
         this.card = card;
+        this.gameObject.SetActive(true);
         attackText.text = card.cardSO.attackPower.ToString();
         healthText.text = card.cardSO.currentHealth.ToString();
         turnText.text = card.turnToAttack.ToString();

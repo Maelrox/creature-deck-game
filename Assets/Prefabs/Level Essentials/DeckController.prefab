@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8132581463940247361}
-  - component: {fileID: 2379138822679163834}
+  - component: {fileID: 6289582176110610397}
   m_Layer: 0
   m_Name: DeckController
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 7284019042519062597}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.926}
---- !u!114 &2379138822679163834
+--- !u!114 &6289582176110610397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,32 +42,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7274019791791968325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd71fe9444cf4ee4f95117224c401a96, type: 3}
+  m_Script: {fileID: 11500000, guid: c050276e8d7c44e448178dcb3dc7b6a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   drawCardCost: 2
   waitBetweenDrawingCards: 0.25
-  deckToUse:
-  - {fileID: 11400000, guid: fd8c8808d1d04a64ba643bb1b522a157, type: 2}
-  - {fileID: 11400000, guid: 1b423846bad911a4b9700d828ae0ef0d, type: 2}
-  - {fileID: 11400000, guid: 5e9e9cfe118f87548b493a65fe2cf49c, type: 2}
-  - {fileID: 11400000, guid: 0890164c9586fce42898bd24eedb44eb, type: 2}
-  - {fileID: 11400000, guid: a2c9bd53711cb25498a4c456d3f5b4eb, type: 2}
-  - {fileID: 11400000, guid: d81752d072e17ad46bd4bc765933eaff, type: 2}
-  enemyDeckToUse:
-  - {fileID: 11400000, guid: fd8c8808d1d04a64ba643bb1b522a157, type: 2}
-  - {fileID: 11400000, guid: 5e9e9cfe118f87548b493a65fe2cf49c, type: 2}
-  - {fileID: 11400000, guid: 1b423846bad911a4b9700d828ae0ef0d, type: 2}
-  - {fileID: 11400000, guid: 0890164c9586fce42898bd24eedb44eb, type: 2}
-  - {fileID: 11400000, guid: a2c9bd53711cb25498a4c456d3f5b4eb, type: 2}
-  - {fileID: 11400000, guid: d81752d072e17ad46bd4bc765933eaff, type: 2}
+  enemyDeckToUse: []
   enemyCemetery: []
-  cardToSpawn: {fileID: 1941223205549372867, guid: 613f785f25a57f94ca7b406b914e04cc,
-    type: 3}
-  thumbnail: {fileID: 4845315805717933685, guid: ffc6b10ec55a1104893eece5ebe4e5f3,
-    type: 3}
-  enemyCard: {fileID: 364611406725805890, guid: 50aca63b5b2955f48adf01d5ea876f98,
-    type: 3}
+  cardToSpawn: {fileID: 0}
+  thumbnail: {fileID: 0}
+  enemyCard: {fileID: 0}
 --- !u!1001 &7105749782223323054
 PrefabInstance:
   m_ObjectHideFlags: 0

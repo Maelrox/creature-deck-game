@@ -17,7 +17,7 @@ MonoBehaviour:
   cardLore: 
   currentHealth: 15
   attackPower: 7
-  turnsToAttack: 0
+  turnsToAttack: 1
   characterSprite: {fileID: 21300000, guid: 0f2379351ac52d74c80c44c8f128a602, type: 3}
   bgSprite: {fileID: 0}
   magicTypes: 

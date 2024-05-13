@@ -41,7 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5667966331445853857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11376ed295f764f42b4cb0f517a9c5b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 832ce78664183f64c8161bfd250f1d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  session: {fileID: 0}
+  lightningParticles: {fileID: 0}
+  effects: {fileID: 5667966331445853857}
+  show: 1

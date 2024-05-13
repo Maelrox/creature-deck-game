@@ -17,7 +17,13 @@ public class NetworkController : MonoBehaviour
     {
         if (message.Contains("getCards"))
         {
-            DeckSelectController.instance.SetPlayableCards(message);
+            if (DeckSelectController.instance != null)
+            {
+                DeckSelectController.instance.SetPlayableCards(message);
+            } else
+            {
+                DeckController.instance.SetPlayableCards(message);
+            }
             NetworkManager.instance.cardsReceived = true;
         }
         if (message.Contains("getDungeons"))
@@ -42,7 +48,7 @@ public class NetworkController : MonoBehaviour
                 NetworkManager.instance.dungeonsReceived = true;
             } else
             {
-                Debug.Log(response);
+                //Debug.Log(response);
             }
 
         }
@@ -56,11 +62,17 @@ public class NetworkController : MonoBehaviour
     {
         if (message.Contains("endBattle"))
         {
-            StartCoroutine(NetworkManager.instance.EndBattle("Morgox"));
+            StartCoroutine(NetworkManager.instance.EndBattle(SessionManager.instance.token));
         }
         if (message.Contains("endDungeon"))
         {
-            StartCoroutine(NetworkManager.instance.CompleteDungeons("Dungeon 1", "Morgox", 1));
+            if (SessionManager.instance.devMode)
+            {
+                StartCoroutine(NetworkManager.instance.CompleteDungeons("Rock Mountains", SessionManager.instance.token, SessionManager.instance.selectedLevel + 1));
+            } else
+            {
+                StartCoroutine(NetworkManager.instance.CompleteDungeons(SessionManager.instance.activeDungeon.name, SessionManager.instance.token, SessionManager.instance.activeDungeon.level));
+            }
         }
     }
 }

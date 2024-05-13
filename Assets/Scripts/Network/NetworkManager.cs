@@ -74,10 +74,10 @@ public class NetworkManager : MonoBehaviour
 
     IEnumerator SendWebSocketMessage(string message)
     {
-        Debug.Log("Sending WebSocket message: " + message);
         if (websocket != null && websocket.State == WebSocketState.Open)
         {
             Task sendTask = websocket.SendText(message);
+            Debug.Log(message);
             while (!sendTask.IsCompleted)
                 yield return null;
 
@@ -89,16 +89,14 @@ public class NetworkManager : MonoBehaviour
             Debug.LogError("WebSocket is closed or not initialized.");
         }
     }
-    public IEnumerator EndBattle(string playerId)
+    public IEnumerator EndBattle(string token)
     {
-        Debug.Log("Reporting battle ending from: " + playerId);
-        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"endBattle\",\"playerId\":\"" + playerId + "\"}"));
+        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"endBattle\",\"token\":\"" + token + "\"}"));
     }
 
-    public IEnumerator GetCardsAsync(string playerId)
+    public IEnumerator GetCardsAsync(string token)
     {
-        Debug.Log("Player Id fetching data: " + playerId);
-        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"getCards\",\"playerId\":\"" + playerId + "\"}"));
+        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"getCards\",\"token\":\"" + token + "\"}"));
     }
 
     public IEnumerator GetPlayerCards(string token)
@@ -108,16 +106,14 @@ public class NetworkManager : MonoBehaviour
     }
 
 
-    public IEnumerator GetDungeonsAsync(string playerId)
+    public IEnumerator GetDungeons(string token)
     {
-        Debug.Log("Player Id fetching data: " + playerId);
-        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"getDungeons\",\"playerId\":\"" + playerId + "\"}"));
+        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"getDungeons\",\"token\":\"" + token + "\"}"));
     }
 
-    public IEnumerator CompleteDungeons(string dungeonName, string playerId, int level)
+    public IEnumerator CompleteDungeons(string dungeonName, string token, int level)
     {
-        Debug.Log("Completing dungeon " + dungeonName + " for player " + playerId + " with level " + level);
-        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"completeDungeon\",\"playerId\":\"" + playerId + "\",\"dungeonName\":\"" + dungeonName + "\",\"level\":\"" + level + "\"}"));
+        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"completeDungeon\",\"token\":\"" + token + "\",\"dungeonName\":\"" + dungeonName + "\",\"level\":\"" + level + "\"}"));
     }
     public IEnumerator RegisterUser(string userId, string password)
     {
@@ -133,7 +129,7 @@ public class NetworkManager : MonoBehaviour
 
     IEnumerator OnWebSocketOpen()
     {
-        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"createGame\"}"));
+        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"HELLO\"}"));
         attemptingReconnect = false;
     }
     void AttemptReconnect()
@@ -226,10 +222,9 @@ public class NetworkManager : MonoBehaviour
         dungeon = selectedDungeon.name;
     }
 
-    public IEnumerator SendCardReward(string playerId, string rewardCard)
+    public IEnumerator SendCardReward(string token, string rewardCard)
     {
-        Debug.Log("Rewarding Player from: " + playerId);
-        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"rewardCard\",\"playerId\":\"" + playerId + "\",\"card\":\"" + rewardCard + "\",\"level\":\"" + 1 + "\"}"));
+        yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"rewardCard\",\"token\":\"" + token + "\",\"card\":\"" + rewardCard + "\",\"level\":\"" + 1 + "\"}"));
     }
 
     internal IEnumerator SavePlayerCards(string token, List<Card> selectedCards)

@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2675815071697866640}
-  - component: {fileID: 8964461532227812477}
+  - component: {fileID: 7028659658590763436}
   m_Layer: 0
   m_Name: Hand Controller
   m_TagString: Untagged
@@ -143,7 +143,7 @@ Transform:
   - {fileID: 3460814410160933123}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8964461532227812477
+--- !u!114 &7028659658590763436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2388488953300061489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191275145ef779b40a5d4684f4d0f213, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b8889097ce9ee241b49c80249e563a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   heldCards: []
@@ -221,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 4974595829474509977}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.16, y: 0, z: 2.35}
+  m_LocalPosition: {x: -3.16, y: 0, z: 2.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -252,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 7837901459504763860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5700002, y: 0, z: 2.35}
+  m_LocalPosition: {x: 1.5700002, y: 0, z: 2.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -337,7 +337,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3848368736298284990, guid: ffc6b10ec55a1104893eece5ebe4e5f3, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2609286254090607331, guid: ffc6b10ec55a1104893eece5ebe4e5f3,
         type: 3}

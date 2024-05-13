@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0cdfa575e27b74db73e213bd0b35ab, type: 3}
   m_Name: SeaSnake
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: SeaSnake
   actionDescription: 
   cardLore: 
-  currentHealth: 0
-  attackPower: 0
+  currentHealth: 77
+  attackPower: 51
   turnsToAttack: 0
-  characterSprite: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 7ac49b0e5f97ff143806fce11076a5bd, type: 3}
   bgSprite: {fileID: 0}
   magicTypes: 
   poisonPower: 0

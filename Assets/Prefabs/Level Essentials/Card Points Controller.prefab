@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5960163208727074159}
   - component: {fileID: 6833671361746944417}
   - component: {fileID: 5258872617275788373}
-  - component: {fileID: 3560083906392197175}
+  - component: {fileID: 8139341035632920458}
   m_Layer: 7
   m_Name: Card_Frame2
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 530949067381748428}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5, y: 0, z: -1.08}
+  m_LocalPosition: {x: -1.5, y: 0, z: -0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &3560083906392197175
+--- !u!114 &8139341035632920458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,11 +118,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 530949067381748428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
-  isPlayerPoint: 1
+  isPlayerPoint: 0
 --- !u!1 &801245009878196988
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 6473023459378702990}
   - component: {fileID: 1200307537584936563}
   - component: {fileID: 8157826225181160136}
-  - component: {fileID: 106137372570650610}
+  - component: {fileID: 5411306253284800711}
   m_Layer: 7
   m_Name: Card_Frame1
   m_TagString: Untagged
@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 801245009878196988}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3, y: 0, z: -1.08}
+  m_LocalPosition: {x: -3, y: 0, z: -0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -232,7 +232,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &106137372570650610
+--- !u!114 &5411306253284800711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,11 +241,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 801245009878196988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
-  isPlayerPoint: 1
+  isPlayerPoint: 0
 --- !u!1 &1288742201973372279
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 1945987647756958923}
   - component: {fileID: 1477011269712198873}
   - component: {fileID: 841271575172699664}
-  - component: {fileID: 4247467569775439283}
+  - component: {fileID: 4338669021745279907}
   m_Layer: 7
   m_Name: Card_Frame5
   m_TagString: Untagged
@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 1288742201973372279}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3, y: 0, z: -1.08}
+  m_LocalPosition: {x: 3, y: 0, z: -0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -355,7 +355,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &4247467569775439283
+--- !u!114 &4338669021745279907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,11 +364,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288742201973372279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
-  isPlayerPoint: 1
+  isPlayerPoint: 0
 --- !u!1 &2598339505571194019
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524120019292125408}
-  - component: {fileID: 3206996012685310638}
+  - component: {fileID: 6527984163762217192}
   m_Layer: 0
   m_Name: Card Points Controller
   m_TagString: Untagged
@@ -403,7 +403,7 @@ Transform:
   - {fileID: 6018398087042618266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3206996012685310638
+--- !u!114 &6527984163762217192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,22 +412,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2598339505571194019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8938194ac7ce5ac488001ffb1ea0db70, type: 3}
+  m_Script: {fileID: 11500000, guid: 30673a96778d76c47a56f441d10748e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCardPoints:
-  - {fileID: 106137372570650610}
-  - {fileID: 3560083906392197175}
-  - {fileID: 6478545041806750415}
-  - {fileID: 7634222397137218667}
-  - {fileID: 4247467569775439283}
-  enemyCardPoints:
-  - {fileID: 5117221399034188281}
-  - {fileID: 243447188125306738}
-  - {fileID: 7339243807523677865}
-  - {fileID: 6420079794039805042}
-  - {fileID: 7609349912340516908}
-  timeBetweenAttacks: 1
+  playerCardPoints: []
+  enemyCardPoints: []
+  timeBetweenAttacks: 0.25
   timeBetweenDropTime: 0.8
   waitTimeForDamage: 0.8
 --- !u!1 &3042281847537530477
@@ -439,7 +429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3948958627148694067}
-  - component: {fileID: 243447188125306738}
+  - component: {fileID: 8461412876942835981}
   m_Layer: 0
   m_Name: Card_Frame Point2
   m_TagString: Untagged
@@ -462,7 +452,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6334024318380150930}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
---- !u!114 &243447188125306738
+--- !u!114 &8461412876942835981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,7 +461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3042281847537530477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
@@ -502,7 +492,7 @@ Transform:
   m_GameObject: {fileID: 3718857031024365662}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5, y: 0, z: 0.87}
+  m_LocalPosition: {x: -1.5, y: 0, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -589,7 +579,7 @@ Transform:
   m_GameObject: {fileID: 3813475569729853370}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3, y: 0, z: 0.87}
+  m_LocalPosition: {x: -3, y: 0, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -712,7 +702,7 @@ Transform:
   m_GameObject: {fileID: 6626520928579340539}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.87}
+  m_LocalPosition: {x: 0, y: 0, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -820,7 +810,7 @@ GameObject:
   - component: {fileID: 8936679767575668643}
   - component: {fileID: 7675832347970278141}
   - component: {fileID: 9213629651730574013}
-  - component: {fileID: 7634222397137218667}
+  - component: {fileID: 881754679101316207}
   m_Layer: 7
   m_Name: Card_Frame4
   m_TagString: Untagged
@@ -837,7 +827,7 @@ Transform:
   m_GameObject: {fileID: 7267951777501448988}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.5, y: 0, z: -1.08}
+  m_LocalPosition: {x: 1.5, y: 0, z: -0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -918,7 +908,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &7634222397137218667
+--- !u!114 &881754679101316207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,11 +917,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7267951777501448988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
-  isPlayerPoint: 1
+  isPlayerPoint: 0
 --- !u!1 &7648563898456017981
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,7 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 501997974509904531}
-  - component: {fileID: 5117221399034188281}
+  - component: {fileID: 2677330180512845182}
   m_Layer: 0
   m_Name: Card_Frame Point1
   m_TagString: Untagged
@@ -964,7 +954,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 806901893898382848}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
---- !u!114 &5117221399034188281
+--- !u!114 &2677330180512845182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -973,7 +963,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7648563898456017981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
@@ -989,7 +979,7 @@ GameObject:
   - component: {fileID: 2658093042521215762}
   - component: {fileID: 5254906313980667504}
   - component: {fileID: 6023069003995367099}
-  - component: {fileID: 6478545041806750415}
+  - component: {fileID: 3724107697946182474}
   m_Layer: 7
   m_Name: Card_Frame3
   m_TagString: Untagged
@@ -1006,7 +996,7 @@ Transform:
   m_GameObject: {fileID: 8167380838810502595}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.08}
+  m_LocalPosition: {x: 0, y: 0, z: -0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1087,7 +1077,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3, y: 1.8, z: 0.02}
   m_Center: {x: -0, y: 0, z: 0}
---- !u!114 &6478545041806750415
+--- !u!114 &3724107697946182474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1096,11 +1086,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8167380838810502595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
-  isPlayerPoint: 1
+  isPlayerPoint: 0
 --- !u!1 &8326651898626782975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1117,7 @@ Transform:
   m_GameObject: {fileID: 8326651898626782975}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3, y: 0, z: 0.87}
+  m_LocalPosition: {x: 3, y: 0, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1214,7 +1204,7 @@ Transform:
   m_GameObject: {fileID: 8532454566858534970}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.5, y: 0, z: 0.87}
+  m_LocalPosition: {x: 1.5, y: 0, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1284,7 +1274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7422941246320239400}
-  - component: {fileID: 7609349912340516908}
+  - component: {fileID: 5417078780203901330}
   m_Layer: 0
   m_Name: Card_Frame Point5
   m_TagString: Untagged
@@ -1307,7 +1297,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538911155733450007}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
---- !u!114 &7609349912340516908
+--- !u!114 &5417078780203901330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1316,7 +1306,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8590103195702939356}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
@@ -1330,7 +1320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7064470190705945157}
-  - component: {fileID: 6420079794039805042}
+  - component: {fileID: 5966573946215195737}
   m_Layer: 0
   m_Name: Card_Frame Point4
   m_TagString: Untagged
@@ -1353,7 +1343,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 862373883296604611}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
---- !u!114 &6420079794039805042
+--- !u!114 &5966573946215195737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1362,7 +1352,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9139663068693857475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
@@ -1376,7 +1366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1795149833267143628}
-  - component: {fileID: 7339243807523677865}
+  - component: {fileID: 5145433158851934428}
   m_Layer: 7
   m_Name: Card_Frame Point3
   m_TagString: Untagged
@@ -1399,7 +1389,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8674518985622485039}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
---- !u!114 &7339243807523677865
+--- !u!114 &5145433158851934428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1408,7 +1398,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9189345332258286267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbce2e5778bb1e49b81d18e8c784c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f96470073b8d942babf2e1212e86e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}

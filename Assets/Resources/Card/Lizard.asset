@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0cdfa575e27b74db73e213bd0b35ab, type: 3}
   m_Name: Lizard
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Lizard
   actionDescription: 
   cardLore: 
-  currentHealth: 0
-  attackPower: 0
-  turnsToAttack: 0
+  currentHealth: 45
+  attackPower: 100
+  turnsToAttack: 4
   characterSprite: {fileID: 0}
   bgSprite: {fileID: 0}
   magicTypes: 

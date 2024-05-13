@@ -583,7 +583,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000456885}
+      - m_Target: {fileID: 2000456886}
         m_TargetAssemblyTypeName: UIDungeonController, Assembly-CSharp
         m_MethodName: CloseModal
         m_Mode: 1
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2000456885}
+      - m_Target: {fileID: 2000456886}
         m_TargetAssemblyTypeName: UIDungeonController, Assembly-CSharp
         m_MethodName: GoToBattle
         m_Mode: 1
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9822ec3fab574d4b914f713686be57d, type: 3}
+  m_Script: {fileID: 11500000, guid: 722420196cc43e540bfcca5f144b6fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1121818799
@@ -907,7 +907,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1367453676}
+      objectReference: {fileID: 2000456886}
     - target: {fileID: 5320250248166771897, guid: f78c83f3af7b8ab449ca168b474e1e47,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1012,11 +1012,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dungeon
-      objectReference: {fileID: 0}
-    - target: {fileID: 6171818939665741503, guid: f78c83f3af7b8ab449ca168b474e1e47,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1568,15 +1563,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1367453671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59349c2f623e89e4696c6bd2db4f9c45, type: 3}
+  m_Script: {fileID: 11500000, guid: cf8a1dd3650293b48873c8ed0e36eb9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 0}
-  dungeonName: Map 1
+  dungeonName: 
   dungeons:
-  - {fileID: 11400000, guid: b71489c6335d38f45b4cb12927beab25, type: 2}
-  - {fileID: 11400000, guid: 4889943aa2c21134ab41d5f619feaddf, type: 2}
   - {fileID: 11400000, guid: c4d87ee1840a85445bdd35703cbc0441, type: 2}
+  - {fileID: 11400000, guid: 4889943aa2c21134ab41d5f619feaddf, type: 2}
+  - {fileID: 11400000, guid: b71489c6335d38f45b4cb12927beab25, type: 2}
   dungeonToSpawn: {fileID: 1102998443}
   selectedDungeon: 
 --- !u!1 &1550928364
@@ -1863,7 +1858,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1367453676}
+      objectReference: {fileID: 0}
     - target: {fileID: 5320250248166771897, guid: f78c83f3af7b8ab449ca168b474e1e47,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1968,11 +1963,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dungeon
-      objectReference: {fileID: 0}
-    - target: {fileID: 6171818939665741503, guid: f78c83f3af7b8ab449ca168b474e1e47,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2169,7 +2159,7 @@ GameObject:
   - component: {fileID: 2000456883}
   - component: {fileID: 2000456882}
   - component: {fileID: 2000456881}
-  - component: {fileID: 2000456885}
+  - component: {fileID: 2000456886}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -2260,7 +2250,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2000456885
+--- !u!114 &2000456886
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2269,7 +2259,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2000456880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a42d8312e2984e4fbdc59e73cf15b09, type: 3}
+  m_Script: {fileID: 11500000, guid: df4fef85d7e0f6e4d9bdaef217393f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dungeonName: {fileID: 1550928366}
@@ -2428,6 +2418,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1367453676}
+    - target: {fileID: 236377283376905434, guid: f78c83f3af7b8ab449ca168b474e1e47,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConfirmModal
+      objectReference: {fileID: 0}
+    - target: {fileID: 236377283376905434, guid: f78c83f3af7b8ab449ca168b474e1e47,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIMapController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5320250248166771897, guid: f78c83f3af7b8ab449ca168b474e1e47,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2532,11 +2532,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dungeon
-      objectReference: {fileID: 0}
-    - target: {fileID: 6171818939665741503, guid: f78c83f3af7b8ab449ca168b474e1e47,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

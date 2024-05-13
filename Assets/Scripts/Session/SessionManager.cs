@@ -15,6 +15,7 @@ public class SessionManager : MonoBehaviour
     public string cardReceived;
     public int selectedLevel;
     public string token;
+    internal bool devMode = false;
 
     void Awake()
     {
@@ -29,18 +30,13 @@ public class SessionManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-
-    }
-
     public void RewardCardToPlayer()
     {
         if (deckCards.Count >= gameCards.Count)
         {
             Debug.Log("No more unique reward cards available.");
         }
-        CardScriptableObject rewardCard = new CardScriptableObject();
+        CardScriptableObject rewardCard;
         HashSet<int> triedIndices = new HashSet<int>();
         while (triedIndices.Count < gameCards.Count)
         {
@@ -55,7 +51,7 @@ public class SessionManager : MonoBehaviour
             {
                 deckCards.Add(rewardCard);
                 Debug.Log("Reward Card added: " + rewardCard.name);
-                StartCoroutine(NetworkManager.instance.SendCardReward("Morgox", rewardCard.name));
+                StartCoroutine(NetworkManager.instance.SendCardReward(SessionManager.instance.token, rewardCard.name));
                 cardReceived = rewardCard.name;
                 break;
             }

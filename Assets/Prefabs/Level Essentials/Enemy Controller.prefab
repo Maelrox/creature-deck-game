@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6770152213743787046}
-  - component: {fileID: 6213674066395049000}
   m_Layer: 0
   m_Name: Enemy Controller
   m_TagString: Untagged
@@ -33,31 +32,6 @@ Transform:
   - {fileID: 504441607214933980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6213674066395049000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633377795522273594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd07179e05602944a817b4bd1b70ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deckToUse:
-  - {fileID: 11400000, guid: fd8c8808d1d04a64ba643bb1b522a157, type: 2}
-  - {fileID: 11400000, guid: 1b423846bad911a4b9700d828ae0ef0d, type: 2}
-  - {fileID: 11400000, guid: 5e9e9cfe118f87548b493a65fe2cf49c, type: 2}
-  cardToSpawn: {fileID: 364611406725805890, guid: 50aca63b5b2955f48adf01d5ea876f98,
-    type: 3}
-  assignedPlaced: {fileID: 0}
-  thumbnail: {fileID: 4845315805717933685, guid: ffc6b10ec55a1104893eece5ebe4e5f3,
-    type: 3}
-  cardSpawnPoint: {fileID: 504441607214933980}
-  enemyAIType: 0
-  startHandSize: 3
-  costPerDraw: 1
 --- !u!1 &3120712970331189834
 GameObject:
   m_ObjectHideFlags: 0
