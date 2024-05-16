@@ -26,7 +26,6 @@ public class UIMapController : MonoBehaviour
 
     void Start()
     {
-        Utilities.DevLogin();
         StartCoroutine(WaitForDungeons());
     }
 

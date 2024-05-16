@@ -21,7 +21,7 @@ MonoBehaviour:
   characterSprite: {fileID: 0}
   bgSprite: {fileID: 0}
   magicTypes: 
-  poisonPower: 0
+  poisonPower: 1
   icePower: 0
   firePower: 0
   spiritPower: 0

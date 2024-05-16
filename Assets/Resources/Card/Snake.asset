@@ -21,7 +21,7 @@ MonoBehaviour:
   characterSprite: {fileID: 21300000, guid: b45549034929fca4e840932a462af9f7, type: 3}
   bgSprite: {fileID: 0}
   magicTypes: 
-  poisonPower: 0
+  poisonPower: 1
   icePower: 0
   firePower: 0
   spiritPower: 0

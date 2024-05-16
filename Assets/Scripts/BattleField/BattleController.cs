@@ -27,7 +27,7 @@ public class BattleController : MonoBehaviour
 
     void Start()
     {
-        Utilities.DevLogin();
+       // Utilities.DevLogin();
         StartCoroutine(WaitForCards());
     }
 

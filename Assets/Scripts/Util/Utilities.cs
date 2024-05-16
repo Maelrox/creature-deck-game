@@ -109,7 +109,7 @@ public class Utilities : ScriptableObject
 
     internal static void DevLogin()
     {
-        SessionManager.instance.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjNmNmI3YmIyYWJjZjY1YTFmMGNlMmQiLCJpYXQiOjE3MTU1OTcyNjUsImV4cCI6MTcxNTc3MDA2NX0.SKQnt3GxA2QiD9vdV9-0X35VGBLi2JFj9tWhgppQ7rk";
+        SessionManager.instance.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjNmNmI3YmIyYWJjZjY1YTFmMGNlMmQiLCJpYXQiOjE3MTU3ODQ5OTUsImV4cCI6MTcxNTk1Nzc5NX0.yvjZ_fMGJLoticDWNpyhhghSuxII-JBFjU6X_2dayI4";
         SessionManager.instance.devMode = true;
        
 

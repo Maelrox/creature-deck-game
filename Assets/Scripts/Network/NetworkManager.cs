@@ -1,11 +1,13 @@
+using NativeWebSocket;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System;
-using System.Threading;
+using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using NativeWebSocket;
 using System.Threading.Tasks;
+using UnityEngine;
+
 
 public class NetworkManager : MonoBehaviour
 {
@@ -28,15 +30,27 @@ public class NetworkManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        // Disable SSL certificate validation
+        System.Net.ServicePointManager.ServerCertificateValidationCallback = MyRemoteCertificateValidationCallback;
     }
 
+    public static bool MyRemoteCertificateValidationCallback(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+    {
+        if (sslPolicyErrors == SslPolicyErrors.None)
+        {
+            return true;   // Is valid
+        }
+
+        Debug.Log("Certificate error: " + sslPolicyErrors);
+        return true;   // For development, allow any certificate
+    }
 
     void Update()
     {
-     
 #if !UNITY_WEBGL || UNITY_EDITOR
         websocket?.DispatchMessageQueue();
-        #endif
+#endif
         if (!attemptingReconnect && (websocket == null || websocket.State == WebSocketState.Closed))
         {
             AttemptReconnect();
@@ -50,13 +64,19 @@ public class NetworkManager : MonoBehaviour
 
     IEnumerator InitializeWebSocket()
     {
-        //websocket = new WebSocket("ws://10.0.2.2:3000");
-        websocket = new WebSocket("ws://localhost:3000");
-        //websocket = new WebSocket("ws://192.168.1.3:3000");
+        Debug.Log("Initializing WebSocket connection...");
 
+        //websocket = new WebSocket("wss://localhost:3000");
+        websocket = new WebSocket("wss://creature-deck.mooo.com:3000");
         websocket.OnOpen += () => StartCoroutine(OnWebSocketOpen());
-        websocket.OnError += OnWebSocketError;
-        websocket.OnClose += OnWebSocketClose;
+        websocket.OnError += (e) => {
+            Debug.LogError($"WebSocket Error: {e}");
+            StartCoroutine(HandleWebSocketError());
+        };
+        websocket.OnClose += (e) => {
+            Debug.Log($"WebSocket closed with code: {e}");
+            StartCoroutine(HandleWebSocketClose());
+        };
         websocket.OnMessage += OnWebSocketMessage;
 
         yield return StartCoroutine(ConnectWebSocket());
@@ -64,12 +84,20 @@ public class NetworkManager : MonoBehaviour
 
     IEnumerator ConnectWebSocket()
     {
+        Debug.Log("Connecting to WebSocket server...");
+
         Task connectTask = websocket.Connect();
         while (!connectTask.IsCompleted)
             yield return null;
 
         if (connectTask.Exception != null)
+        {
             Debug.LogError("WebSocket connect error: " + connectTask.Exception.InnerException);
+        }
+        else
+        {
+            Debug.Log("WebSocket connected successfully.");
+        }
     }
 
     IEnumerator SendWebSocketMessage(string message)
@@ -77,7 +105,7 @@ public class NetworkManager : MonoBehaviour
         if (websocket != null && websocket.State == WebSocketState.Open)
         {
             Task sendTask = websocket.SendText(message);
-            Debug.Log(message);
+            Debug.Log("Sending message: " + message);
             while (!sendTask.IsCompleted)
                 yield return null;
 
@@ -89,6 +117,7 @@ public class NetworkManager : MonoBehaviour
             Debug.LogError("WebSocket is closed or not initialized.");
         }
     }
+
     public IEnumerator EndBattle(string token)
     {
         yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"endBattle\",\"token\":\"" + token + "\"}"));
@@ -105,7 +134,6 @@ public class NetworkManager : MonoBehaviour
         yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"getCards\",\"token\":\"" + token + "\"}"));
     }
 
-
     public IEnumerator GetDungeons(string token)
     {
         yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"getDungeons\",\"token\":\"" + token + "\"}"));
@@ -115,6 +143,7 @@ public class NetworkManager : MonoBehaviour
     {
         yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"completeDungeon\",\"token\":\"" + token + "\",\"dungeonName\":\"" + dungeonName + "\",\"level\":\"" + level + "\"}"));
     }
+
     public IEnumerator RegisterUser(string userId, string password)
     {
         Debug.Log("Registering user " + userId + " for player " + password);
@@ -129,9 +158,11 @@ public class NetworkManager : MonoBehaviour
 
     IEnumerator OnWebSocketOpen()
     {
+        Debug.Log("WebSocket connection opened.");
         yield return StartCoroutine(SendWebSocketMessage("{\"type\":\"HELLO\"}"));
         attemptingReconnect = false;
     }
+
     void AttemptReconnect()
     {
         if (!attemptingReconnect)
@@ -148,14 +179,13 @@ public class NetworkManager : MonoBehaviour
             var message = Encoding.UTF8.GetString(bytes);
             if (!string.IsNullOrEmpty(message))
             {
-                Debug.Log(message);
+                Debug.Log("Received from server: " + message);
                 if (NetworkController.instance == null)
                 {
                     //Debug.LogError("Network controller is empty");
                     return;
                 }
                 NetworkController.instance.ProcessWebSockerMessage(message);
-                Debug.Log("Received from server: " + message);
             }
         }
     }
@@ -207,7 +237,6 @@ public class NetworkManager : MonoBehaviour
         }
     }
 
-    // Helper method for conversion, if necessary
     private async void OnApplicationQuit()
     {
         if (websocket != null)
